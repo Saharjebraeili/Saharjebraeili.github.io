@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Homepage of Sahar Jebraeili">
+    <meta name="author" content="Sahar Jebraeili">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/page.js"></script>
+    <script src="js/publications.json"></script>
+    <script src="js/publications.js"></script>
+
+    <title style="color: #1b3959;">Sahar Jebraeili - CV</title>
+
+    <style>
+        body {
+            background-color: #f4f8fb;
+            color: #333;
+            font-family: "Arial", sans-serif;
+        }
+
+        .navbar {
+            background-color: #1b3959;
+        }
+
+        .nav-link {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: #ffd700;
+        }
+
+        .navbar-expand {
+            justify-content: center;
+        }
+
+        .profile {
+            max-width: 300px;
+            border: 4px solid #007BFF;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-title {
+            color: #1b3959;
+            font-size: 32px;
+        }
+
+        .btn {
+            margin: 5px;
+            background-color: #1b3959;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #ffd700;
+            color: #333;
+        }
+
+        .lead {
+            color: #333;
+        }
+
+        .list-group-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .badge-primary {
+            background-color: #007BFF;
+        }
+
+        #cv-button {
+            margin-top: 10px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            background-color: #1b3959;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .col-md-9 {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .publication-image {
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #fff;
+        }
+
+        h2 {
+            color: #1b3959;
+            font-size: 28px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-centered">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a id="about_nav" class="nav-link" href="#background_hd">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#publications_nav">Publications</a>
+            </li>
+        </ul>
+    </nav>
+
+    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+
+    <main id="background_hd" role="main" class="container pt-5">
+        <div class="card mb-3 pt-3 border-0">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 text-center">
+                    <img src="img/my_pic_sahar.jpg" class="profile thumbnail rounded-circle">
+                </div>
+                <div class="col-md-8 col-xs-12 d-flex intro">
+                    <div class="card-body">
+                        <h1 class="card-title text-center text-monospace">Sahar Jebraeili</h1>
+                        <div class="intro text-center">
+                            <a class="btn" data-toggle="tooltip" title="Download CV" id="cv-button"
+                                href="">
+                                CV
+                            </a>
+                            <a class="btn" data-toggle="tooltip" title="LinkedIn"
+                                href="">
+                                <i class="fa fa-linkedin" aria-hidden="true" style="color: #ffd700;"></i> LinkedIn
+                            </a>
+                        </div>
+                        <p class="card-text text-center text-monospace" style="font-size: 14px;">
+                            <u>jebrailisahar98@gmail.com</u>
+                        </p>
+
+                        <p class="card-text text-center text-monospace">MSc in Phytopathology </p>
+                        <p class="card-text text-center text-monospace">University of Guilan</p>
+                        <p class="card-text text-center text-monospace">Qazvin, Iran</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-md-9 col-xs-12">
+                <h2 class="mt-4 text-center"><b>About Me</b></h2>
+                <p class="lead text-justify">
+                    Hello! My name is Sahar Jebraeili, and I recently completed my master's degree, where I focused on the identification and control of Fusarium fungus. My research interest is in plant pathogens, particularly fungi, and I am eager to continue exploring this area. During my master's, I gained extensive hands-on experience in the laboratory, becoming well-versed in both the environment and equipment required for pathogen research. I am especially keen to deepen my knowledge and further investigate Fusarium or other fungus and their impact on plant health. Additionally, I am proficient in Python programming, which I have applied in my research to analyze data and develop models. I am excited about the opportunity to contribute to ongoing research and expand my expertise in this field.
+                </p>
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <h2 id="publications_nav" class="mt-5 text-center"><b>Publications</b></h2>
+        <ul class="list-group" id="pubs_conf">
+            <li class="list-group-item pub-item" id="pub-11">
+                <div class="row d-flex flex-wrap align-items-center">
+                    <div class="col-md-3 d-none d-md-block">
+                        <img src="img/results.jpg" width="100%" style="display: block; margin-left: auto;">
+                    </div>
+                    <div class="col-xs-12 col-md-9">
+                        <div style="color: #000;">
+                            <h5><b>Investigating the effectiveness of Hydroxyquinoline for the chemical control of cucumber root and stem rot caused by Fusarium fungus</b> <span style="font-size: 14px;">[In Preparation]</span></h5>
+                        </div>
+                        <b style="color: #000; font-size: 14px;"> <u> Sahar jebraeili</u>, Sediqeh Mosanejhad, Akbar Khodaparast, Salar Jamali, Mohammadjavad Poormoqadam</b>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </main>
+
+    <footer class="footer">
+        <div class="container strip">
+			<span class="sm" id="modified" style="color: #000;">Last modified: 09/08/2024</span>
+		</div>
+
+    </footer>
+
+</body>
+
+</html>
